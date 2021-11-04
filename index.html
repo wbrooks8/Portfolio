@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolie</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700320887.jpg");
+            background-size: 120%;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 1.3em;
+        }
+        #top-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2vw;
+        }
+
+        #head {
+            color: maroon;
+            height: 10vh;
+            width: 19vw;
+            font-size: 2.9em;
+            text-align: right;
+            text-align: bottom;
+            align-self: flex-end;
+            padding-top: 50px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+            font-weight: bolder;
+        }
+        
+        hr {
+            display: block;
+            width: 19vw;
+            margin-bottom: auto;
+            margin-top: 0px;
+            border: 1px inset;
+            overflow: hidden;
+            align-self: flex-start;
+            margin: 0;
+            padding: 0;
+            background-color: darkgray;
+        }
+
+        #bar {
+            height: 10vh;
+            flex-grow: 4;
+            margin: auto;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-top: 10vh;
+        }
+
+        #me {
+            height: 45vh;
+            width: 45vh;
+            border-right: 2px solid whitesmoke;
+            border-bottom: 2px ridge whitesmoke;
+        }
+        
+        #empty {
+            width: 40vw;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40vw;
+            height: 50vh;
+            margin-top: 15vh;
+            margin-left: 9vw;
+        }
+
+        p {
+            padding: 60px;
+            text-align:left;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.9em;
+        }
+        
+        a {
+            position: relative;
+            top: 10px;
+            padding: 4px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: whitesmoke;
+            text-shadow: darkgray;
+        }
+
+        a:hover {
+            opacity: 70%;
+        }
+
+
+        button{
+            background: maroon;
+            color: whitesmoke;
+            border:none;
+            position: relative;
+            margin-top: 7vh;
+            height: 20vh;
+            font-size:2em;
+            padding:0 2em;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+        }
+        button:hover{
+            background: whitesmoke;
+            color: maroon;
+        }
+        button:before,button:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: maroon;
+            transition:400ms ease all;
+        }
+        button:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+        button:hover:before,button:hover:after{
+            width:100%;
+            transition:800ms ease all;
+        }
+
+        #photoDiv{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 45vw;
+        }
+
+        #resume {
+            height: 5vh; 
+            font-size: 1.4em;
+            margin: auto;
+            width: 45vh;
+            padding: 16px;
+            
+        }
+
+        #hireable {
+            width: 20vw;
+            margin-top: 3vh;
+            font-size: 1.2em;
+            font-family: unset;
+            margin: auto;
+            padding: 15px;
+
+        }
+
+        #photo {
+            height: 50vh;
+            width: 45vh;
+            margin: auto;
+            margin-top: 10vh;
+        }
+
+        
+    </style>
+</head>
+<body>
+<div id="top-left">
+    <a href="index.html" id="head">Kyle Brooks</a>
+    <hr />
+</div>
+<div id="empty"></div>
+<div id="bar">
+    <a href="library.html">Projects</a>
+    <a href="aboutMe.html">About Me</a>
+    <a href="contact.html"> Contact</a>
+    <a href="https://github.com/wbrooks8">Github</a>
+</div>
+<div id="main">
+    <h2></h2>
+    <p id="me"></p>
+    <button onclick="location.href='library.html'">Projects</button>
+</div>
+<div id="photoDiv">
+    <img id="photo">
+    <p id="hireable"></p>
+    <button onclick="location.href='https://docs.google.com/document/d/e/2PACX-1vRml5KrkTNuLDG55oQ8VlVvNvY_zbEcMndOWb0pSmaxWJuahT_5ZV03NAwLIb-0cA/pub'" id="resume">My Resume</a>
+</div>
+
+<script src="script.js"> </script>
+</body>
+</html>

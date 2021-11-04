@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Me</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700320887.jpg");
+            background-size: 120%;
+            background-attachment: fixed;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 1.3em;
+        }
+
+        .contact-wrap {
+            margin: auto;
+            padding-top: 15vh;
+            display: flex;
+        }
+
+        .form-control {
+            position: relative;
+            left: 10vw;
+            height: 3vh;
+            width: 10vw;
+            margin: 1vh;
+            margin-left: 15vw;
+        }
+
+        #message {
+            height: 10vh;
+            width: 40vw;
+
+        }
+
+        #top-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2vw;
+        }
+
+        #head {
+            color: maroon;
+            height: 10vh;
+            width: 19vw;
+            font-size: 2.9em;
+            text-align: right;
+            text-align: bottom;
+            align-self: flex-end;
+            padding-top: 50px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+            font-weight: bolder;
+        }
+
+        hr {
+            display: block;
+            width: 19vw;
+            margin-bottom: auto;
+            margin-top: 0px;
+            border: 1px inset;
+            overflow: hidden;
+            align-self: flex-start;
+            margin: 0;
+            padding: 0;
+            background-color: darkgray;
+        }
+
+        #bar {
+            height: 10vh;
+            flex-grow: 4;
+            margin: auto;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-top: 10vh;
+        }
+
+        a {
+            position: relative;
+            top: 10px;
+            padding: 4px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: whitesmoke;
+            text-shadow: darkgray;
+        }
+
+        a:hover {
+            opacity: 70%;
+        }
+
+        #empty {
+            width: 40vw;
+        }
+
+        label {
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="top-left">
+        <a href="index.html" id="head">Kyle Brooks</a>
+        <hr />
+    </div>
+    <div id="empty"></div>
+    <div id="bar">
+        <a href="library.html">Projects</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contact.html"> Contact</a>
+        <a href="https://github.com/wbrooks8">Github</a>
+    </div>
+
+    <section class="contact-wrap">
+  <form action="" class="contact-form">
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">First Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="input-block">
+        <label for="">Last Name</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">Email</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block">
+        <label for="">Message Subject</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="input-block textarea">
+        <label for="">Drop your message here</label>
+        <textarea rows="3" type="text" id="message" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <button class="square-button">Send</button>
+    </div>
+  </form>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Library</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700320887.jpg");
+            background-size: 120%;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 1.3em;
+        }
+
+        #top-left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2vw;
+        }
+
+        #head {
+            color: maroon;
+            height: 10vh;
+            width: 19vw;
+            font-size: 2.9em;
+            text-align: right;
+            text-align: bottom;
+            align-self: flex-end;
+            padding-top: 50px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+            font-weight: bolder;
+        }
+
+        hr {
+            display: block;
+            width: 19vw;
+            margin-bottom: auto;
+            margin-top: 0px;
+            border: 1px inset;
+            overflow: hidden;
+            align-self: flex-start;
+            margin: 0;
+            padding: 0;
+            background-color: darkgray;
+        }
+
+        #bar {
+            height: 10vh;
+            flex-grow: 4;
+            margin: auto;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-top: 10vh;
+        }
+
+        #me {
+            height: 45vh;
+            width: 45vh;
+            border-right: 2px solid whitesmoke;
+            border-bottom: 2px ridge whitesmoke;
+        }
+        
+        #empty {
+            width: 40vw;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40vw;
+            height: 50vh;
+            margin-top: 15vh;
+            margin-left: 9vw;
+        }
+
+        a {
+            position: relative;
+            top: 10px;
+            padding: 4px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: whitesmoke;
+            text-shadow: darkgray;
+        }
+
+        a:hover {
+            opacity: 70%;
+        }
+
+        #mBox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100vw;
+            justify-content: space-evenly;
+        }
+
+        .Box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+        .image {
+            width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top-left">
+        <a href="index.html" id="head">Kyle Brooks</a>
+        <hr />
+    </div>
+    <div id="empty"></div>
+    <div id="bar">
+        <a href="library.html">Projects</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="contact.html"> Contact</a>
+        <a href="https://github.com/wbrooks8">Github</a>
+    </div>
+    <div id="mBox">
+        <div class='Box'>
+            <h2>Rock Paper Scissors</h2>
+            <a href="https://wbrooks8.github.io/Rock-Paper-Scissors/"><img class="image" src="Screen Shot 2021-11-04 at 9.27.09 AM.png"></a>
+            <a href="https://github.com/wbrooks8/Rock-Paper-Scissors">Repository</a>
+        </div>
+        <div class='Box'>
+            <h2>Tic-Tac-Toe</h2>
+            <a href="https://wbrooks8.github.io/Tic-Tac-Toe/"><img class="image" src="Screen Shot 2021-11-04 at 9.27.55 AM.png"></a>
+            <a href="https://github.com/wbrooks8/Tic-Tac-Toe">Repository</a>
+        </div>
+        <div class='Box'>
+            <h2>Reading Library</h2>
+            <a href="https://github.com/wbrooks8/Library"><img class="image" src="Screen Shot 2021-11-04 at 9.28.29 AM.png"></a>
+            <a href="https://wbrooks8.github.io/Library/">Repository</a>
+        </div>
+        <div class='Box'>
+            <h2>Calculator</h2>
+            <a href="https://wbrooks8.github.io/Calculator-TOP/"><img class="image" src="Screen Shot 2021-11-04 at 9.28.56 AM.png"></a>
+            <a href="https://github.com/wbrooks8/Calculator-TOP">Repository</a>
+        </div>
+        <div class='Box'>
+            <h2>Etch-A-Sketch</h2>
+            <a href="https://wbrooks8.github.io/etch-a-sketch/"><img class="image" src="Screen Shot 2021-11-04 at 9.29.41 AM.png"></a>
+            <a href="https://github.com/wbrooks8/etch-a-sketch">Repository</a>
+        </div>
+        <div class='Box'>
+            <h2></h2>
+            <a href=""><img class="image" src=""></a>
+        </div>
+        <div class='Box'>
+            <h2></h2>
+            <a href=""><img class="image" src=""></a>
+        </div>
+        <div class='Box'>
+            <h2></h2>
+            <a href=""><img class="image" src=""></a>
+        </div>
+        <div class='Box'>
+            <h2></h2>
+            <a href=""><img class="image" src=""></a>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
